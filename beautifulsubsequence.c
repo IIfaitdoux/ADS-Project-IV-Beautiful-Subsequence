@@ -28,19 +28,6 @@ long long query(int idx) {
     return sum;
 }
 
-// Calculate (base^exp) % MOD using binary exponentiation(fasten the calculation)
-long long power(long long base, long long exp) {
-    long long result = 1;
-    while (exp > 0) {
-        if (exp & 1) {
-            result = (result * base) % MOD;
-        }
-        base = (base * base) % MOD;
-        exp >>= 1;
-    }
-    return result;
-}
-
 int main() {
     scanf("%d %d", &n, &m);
     for (int i = 0; i < n; i++) {
@@ -72,7 +59,7 @@ int main() {
     }
     
     // total subsequences (excluding empty subsequence) = 2^n - 1 - n
-    long long total_subsequences = (power(2, n) - 1 + MOD) % MOD;
+    long long total_subsequences = ((2<<(n-1)) - 1 + MOD) % MOD;
     
     // total ugly subsequences
     long long ugly_subsequences = (total_ugly + MOD) % MOD;
