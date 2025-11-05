@@ -50,12 +50,12 @@ int main() {
         long long count = (query(low) + query(MAX_VAL - 1) - query(high - 1) + MOD) % MOD;
         
         // ugly subsequences ending with a[i]
-        long long dp_i = (1 + count) % MOD;
+        long long new_ugly_i = (1 + count) % MOD;
         
         // update the Fenwick Tree
-        update(a[i], dp_i);
+        update(a[i], new_ugly_i);
         
-        total_ugly = (total_ugly + dp_i) % MOD;
+        total_ugly = (total_ugly + new_ugly_i) % MOD;
     }
     
     // total subsequences (excluding empty subsequence) = 2^n - 1 - n
